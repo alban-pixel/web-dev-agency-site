@@ -1,8 +1,6 @@
-import Planet_1 from "../public/planet-01.png";
-import Planet_2 from "../public/planet-02.png";
-import Planet_3 from "../public/planet-03.png";
-import Planet_4 from "../public/planet-04.png";
-import Planet_5 from "../public/planet-05.png";
+import Planet_1 from "../public/images/Screenshot 2026-03-14 at 13-56-25 Floragel.png";
+import Planet_3 from "../public/images/Screenshot_20260314-111514.png";
+import Planet_2 from "../public/images/Screenshot 2026-03-14 at 13-56-51 6622 - Stan Robotix.png";
 import Planet_6 from "../public/planet-06.png";
 import Planet_7 from "../public/planet-07.png";
 import Planet_8 from "../public/planet-08.png";
@@ -17,28 +15,18 @@ export const exploreWorlds = [
   {
     id: "world-1",
     imgUrl: Planet_1,
-    title: "Design Web Sur Mesure",
+    title: "Floragel",
   },
   {
     id: "world-2",
     imgUrl: Planet_2,
-    title: "Solutions E-Commerce",
+    title: "StanRbotix",
   },
   {
     id: "world-3",
     imgUrl: Planet_3,
-    title: "Optimisation SEO",
-  },
-  {
-    id: "world-4",
-    imgUrl: Planet_4,
-    title: "Intégration CMS",
-  },
-  {
-    id: "world-5",
-    imgUrl: Planet_5,
-    title: "Applications Web",
-  },
+    title: "Trakant",
+  }
 ];
 
 export const startingFeatures = [
