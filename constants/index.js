@@ -1,6 +1,6 @@
-import Planet_1 from "../public/images/Screenshot 2026-03-14 at 13-56-25 Floragel.png";
-import Planet_3 from "../public/images/Screenshot_20260314-111514.png";
-import Planet_2 from "../public/images/Screenshot 2026-03-14 at 13-56-51 6622 - Stan Robotix.png";
+import Planet_1 from "../public/images/floragel.jpg";
+import Planet_3 from "../public/images/trakant.jpg";
+import Planet_2 from "../public/images/robotix.jpg";
 import Planet_6 from "../public/planet-06.png";
 import Planet_7 from "../public/planet-07.png";
 import Planet_8 from "../public/planet-08.png";

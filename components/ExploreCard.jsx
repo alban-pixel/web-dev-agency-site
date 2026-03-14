@@ -9,11 +9,9 @@ import headset from "../public/headset.svg";
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
   <motion.div
     variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-    className={`relative ${
-      active === id ? "lg:flex-[3.5] flex-[10] z-20" : "lg:flex-[0.5] flex-[2] z-10"
-    } ${
-      styles.flexCenter
-    } min-w-[120px] h-[600px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer rounded-[24px] overflow-hidden group`}
+    className={`relative ${active === id ? "lg:flex-[3.5] flex-[10] z-20" : "lg:flex-[0.5] flex-[2] z-10"
+      } ${styles.flexCenter
+      } min-w-[190px] h-[600px] transition-[flex] duration-[0.4s] ease-out-flex cursor-pointer rounded-[24px] overflow-hidden group`}
     onClick={() => handleClick(id)}
   >
     {/* Click overlay to ensure the entire card is clickable without child interference */}
