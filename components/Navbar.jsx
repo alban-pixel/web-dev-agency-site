@@ -17,19 +17,15 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={`${styles.xPaddings} py-8 relative`}>
-      <motion.div
-        variants={navVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
-        className="absolute w-[50%] inset-0 gradient-01"
+    <nav className={`${styles.xPaddings} py-8 sticky top-0 z-50 bg-primary-black/80 backdrop-blur-md`}>
+      <div
+        className="absolute w-[50%] inset-0 gradient-01 opacity-50"
       />
 
       <motion.div
-        variants={navVariants}
-        initial="hidden"
-        whileInView="show"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 80, delay: 0.5 }}
         className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
       >
         <a href="#" className="font-extrabold text-[24px] leading-[30px] text-white uppercase">
