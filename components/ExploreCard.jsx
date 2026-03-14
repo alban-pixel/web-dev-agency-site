@@ -25,7 +25,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
       className="absolute w-full h-full object-cover rounded-[24px] transition-opacity duration-300 group-hover:opacity-80"
     />
     {active !== id ? (
-      <h3 className="font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0] pointer-events-none">
+      <h3 className="font-semibold sm:text-[26px] text-[18px] text-primary-text absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0] pointer-events-none">
         {title}
       </h3>
     ) : (
@@ -39,10 +39,10 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
             className="w-1/2 h-1/2 object-contain"
           />
         </div>
-        <p className="font-normal text-[16px] leading-[20px] text-white uppercase ">
+        <p className="font-normal text-[16px] leading-[20px] text-primary-text uppercase ">
           Découvrir ce service
         </p>
-        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white ">
+        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-primary-text ">
           {title}
         </h2>
       </div>
