@@ -7,6 +7,7 @@ module.exports = {
     './styles/**/*.{js,jsx}',
   ],
   mode: 'jit',
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,9 @@ module.exports = {
         'primary-text': '#1A202C',
         'secondary-text': '#4A5568',
         'accent-blue': '#2563EB',
+        'primary-black': '#1A232E',
+        'secondary-white': '#c7c7c7',
+        'dark-accent': '#25618B',
       },
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',

@@ -50,10 +50,10 @@ const Contact = () => {
           {/* Contact Info */}
           <motion.div
             variants={fadeIn("right", "tween", 0.2, 1)}
-            className="flex-1 flex flex-col gap-6 justify-center bg-primary-text/5 p-8 rounded-[32px] border-[1px] border-[#d1d5db]"
+            className="flex-1 flex flex-col gap-6 justify-center bg-primary-text/5 dark:bg-white/5 p-8 rounded-[32px] border-[1px] border-[#d1d5db] dark:border-[#6a6a6a]"
           >
             <div>
-              <h4 className="font-bold sm:text-[24px] text-[20px] text-primary-text">
+              <h4 className="font-bold sm:text-[24px] text-[20px] text-primary-text dark:text-white">
                 Nous retrouver sur LinkedIn
               </h4>
               <div className="flex flex-col gap-3 mt-[12px]">
@@ -63,11 +63,11 @@ const Contact = () => {
                     href={member.linkedinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-secondary-text hover:text-primary-text transition-colors flex flex-col gap-1 group"
+                    className="text-secondary-text dark:text-secondary-white hover:text-primary-text dark:hover:text-white transition-colors flex flex-col gap-1 group"
                   >
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-accent-blue group-hover:scale-125 transition-transform" />
-                      <span className="font-semibold text-primary-text">{member.name}</span>
+                      <span className="w-2 h-2 rounded-full bg-accent-blue dark:bg-[#25618B] group-hover:scale-125 transition-transform" />
+                      <span className="font-semibold text-primary-text dark:text-white">{member.name}</span>
                     </div>
                     <p className="text-[14px] ml-4 opacity-80 group-hover:opacity-100 italic transition-opacity">
                       Consulter le profil professionnel de {member.name}
@@ -77,18 +77,18 @@ const Contact = () => {
               </div>
             </div>
             <div>
-              <h4 className="font-bold sm:text-[24px] text-[20px] text-primary-text">
+              <h4 className="font-bold sm:text-[24px] text-[20px] text-primary-text dark:text-white">
                 Email
               </h4>
-              <p className="mt-[8px] font-normal sm:text-[16px] text-[14px] text-secondary-text">
+              <p className="mt-[8px] font-normal sm:text-[16px] text-[14px] text-secondary-text dark:text-secondary-white">
                 contact@maltos.dev
               </p>
             </div>
             <div>
-              <h4 className="font-bold sm:text-[24px] text-[20px] text-primary-text">
+              <h4 className="font-bold sm:text-[24px] text-[20px] text-primary-text dark:text-white">
                 Téléphone
               </h4>
-              <p className="mt-[8px] font-normal sm:text-[16px] text-[14px] text-secondary-text">
+              <p className="mt-[8px] font-normal sm:text-[16px] text-[14px] text-secondary-text dark:text-secondary-white">
                 +1 514 824 0732 RANDOM NUMEROT A CHANGER
               </p>
             </div>
@@ -97,7 +97,7 @@ const Contact = () => {
           {/* Contact Form */}
           <motion.div
             variants={fadeIn("left", "tween", 0.2, 1)}
-            className="flex-[1.5] bg-primary-text/5 p-8 rounded-[32px] border-[1px] border-[#d1d5db] relative overflow-hidden"
+            className="flex-[1.5] bg-primary-text/5 dark:bg-white/5 p-8 rounded-[32px] border-[1px] border-[#d1d5db] dark:border-[#6a6a6a] relative overflow-hidden"
           >
             <AnimatePresence>
               {status === "success" && (
@@ -105,7 +105,7 @@ const Contact = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="absolute inset-0 bg-primary-bg/90 z-20 flex flex-col items-center justify-center p-8 text-center"
+                  className="absolute inset-0 bg-primary-bg/90 dark:bg-primary-black/90 z-20 flex flex-col items-center justify-center p-8 text-center"
                 >
                   <motion.div
                     initial={{ scale: 0 }}
@@ -116,8 +116,8 @@ const Contact = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                     </svg>
                   </motion.div>
-                  <h3 className="text-primary-text font-bold text-2xl mb-2">Message PAS envoyé !</h3>
-                  <p className="text-secondary-text">Merci de nous avoir contactés. Nous vous répondrons très bientôt. FAKE LE API EST PAS ENCORE FAIT CA FAIT RIEN</p>
+                  <h3 className="text-primary-text dark:text-white font-bold text-2xl mb-2">Message PAS envoyé !</h3>
+                  <p className="text-secondary-text dark:text-secondary-white">Merci de nous avoir contactés. Nous vous répondrons très bientôt. FAKE LE API EST PAS ENCORE FAIT CA FAIT RIEN</p>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -131,7 +131,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="Votre nom"
-                  className="flex-1 bg-transparent border-b-[1px] border-[#d1d5db] text-primary-text p-4 focus:outline-none focus:border-primary-text transition-colors"
+                  className="flex-1 bg-transparent border-b-[1px] border-[#d1d5db] dark:border-[#6a6a6a] text-primary-text dark:text-white p-4 focus:outline-none focus:border-primary-text dark:focus:border-white transition-colors"
                 />
                 <input
                   type="email"
@@ -140,7 +140,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="Votre email"
-                  className="flex-1 bg-transparent border-b-[1px] border-[#d1d5db] text-primary-text p-4 focus:outline-none focus:border-primary-text transition-colors"
+                  className="flex-1 bg-transparent border-b-[1px] border-[#d1d5db] dark:border-[#6a6a6a] text-primary-text dark:text-white p-4 focus:outline-none focus:border-primary-text dark:focus:border-white transition-colors"
                 />
               </div>
               <input
@@ -150,7 +150,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 placeholder="Sujet de votre message"
-                className="bg-transparent border-b-[1px] border-[#d1d5db] text-primary-text p-4 focus:outline-none focus:border-primary-text transition-colors"
+                className="bg-transparent border-b-[1px] border-[#d1d5db] dark:border-[#6a6a6a] text-primary-text dark:text-white p-4 focus:outline-none focus:border-primary-text dark:focus:border-white transition-colors"
               />
               <textarea
                 name="message"
@@ -159,12 +159,12 @@ const Contact = () => {
                 required
                 placeholder="Votre message"
                 rows="4"
-                className="bg-transparent border-b-[1px] border-[#d1d5db] text-primary-text p-4 focus:outline-none focus:border-primary-text transition-colors resize-none"
+                className="bg-transparent border-b-[1px] border-[#d1d5db] dark:border-[#6a6a6a] text-primary-text dark:text-white p-4 focus:outline-none focus:border-primary-text dark:focus:border-white transition-colors resize-none"
               />
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="mt-4 py-4 px-8 bg-accent-blue rounded-[32px] w-fit font-bold text-[16px] text-white hover:bg-opacity-80 transition-all duration-300 self-end disabled:opacity-50 disabled:cursor-not-allowed"
+                className="mt-4 py-4 px-8 bg-accent-blue dark:bg-[#25618B] rounded-[32px] w-fit font-bold text-[16px] text-white hover:bg-opacity-80 transition-all duration-300 self-end disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {status === "sending" ? "Envoi en cours..." : "Envoyer le message"}
               </button>

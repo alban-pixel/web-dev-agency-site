@@ -6,7 +6,7 @@ import { textContainer, textVariant2 } from "../utils/motion";
 export const TypingText = ({ title, textStyles }) => (
   <motion.p
     variants={textContainer}
-    className={`font-normal text-[14px] text-secondary-text ${textStyles}`}
+    className={`font-normal text-[14px] text-secondary-text dark:text-secondary-white ${textStyles}`}
   >
     {/* This Array will split the characters in the title and then map over that characters */}
     {/* NOTE use 'parenthesis' over 'curly brackets' to return something instantly */}
@@ -24,7 +24,7 @@ export const TitleText = ({ title, textStyles }) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-primary-text ${textStyles} `}
+    className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-primary-text dark:text-white ${textStyles} `}
   >
     {title}
   </motion.h2>

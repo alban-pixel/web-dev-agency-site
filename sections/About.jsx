@@ -19,23 +19,23 @@ const About = () => (
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 0.8)}
-        className="mt-[10px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-text "
+        className="mt-[10px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-text dark:text-secondary-white"
       >
-        <span className="font-extrabold text-primary-text">Nous sommes</span> une
+        <span className="font-extrabold text-primary-text dark:text-white">Nous sommes</span> une
         équipe d'etudiants passionnée dans la recherche technologique et le développement web.
-        Nous développons des sites web pour nous faire de l'experience professionelle et aider les commerces et les entreprises a atteindre <span className="font-extrabold text-primary-text">plus de clients</span>.
+        Nous développons des sites web pour nous faire de l'experience professionelle et aider les commerces et les entreprises a atteindre <span className="font-extrabold text-primary-text dark:text-white">plus de clients</span>.
         Que vous ayez besoin d'un
         simple site de présentation ou d'une{" "}
-        <span className="font-extrabold text-primary-text">
+        <span className="font-extrabold text-primary-text dark:text-white">
           {" "}
           application web sur mesure{" "}
         </span>
         {", "}
         nos services sont conçues pour{" "}
-        <span className="font-extrabold text-primary-text"> accélérer </span> votre
+        <span className="font-extrabold text-primary-text dark:text-white"> accélérer </span> votre
         croissance et transformer vos visiteurs en clients fidèles.{" "}
-        <span className="font-extrabold text-primary-text">Découvrez</span> comment
-        nous pouvons donner vie à <span className="font-extrabold text-primary-text">votre vision</span>.
+        <span className="font-extrabold text-primary-text dark:text-white">Découvrez</span> comment
+        nous pouvons donner vie à <span className="font-extrabold text-primary-text dark:text-white">votre vision</span>.
       </motion.p>
       <a href="#team">
         <motion.img

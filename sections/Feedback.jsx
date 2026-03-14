@@ -22,19 +22,19 @@ const Feedback = () => (
       <div className="flex lg:flex-row flex-col gap-6 mt-8">
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#d1d5db] relative "
+          className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#d1d5db] dark:border-[#6a6a6a] relative "
         >
           <div className="feedback-gradient" />
 
           <div>
-            <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-primary-text">
+            <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-primary-text dark:text-white">
               HackDébutants & ConuHacks
             </h4>
-            <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-primary-text">
+            <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-primary-text dark:text-white">
               2025 & 2026
             </p>
           </div>
-          <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-primary-text">
+          <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-primary-text dark:text-white">
             Notre équipe a remporté le 1er prix d'une compétition de programmation à l'Université Concordia. Nous nous sommes également illustrés lors de la plus grande compétition canadienne (+ de 1000 participants) avec un projet rivalisant avec les meilleurs.          </p>
         </motion.div>
 

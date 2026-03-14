@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { ThemeProvider } from "next-themes";
 
 import "../styles/globals.css";
 
@@ -15,7 +16,9 @@ const MyApp = ({ Component, pageProps }) => (
         href="https://stijndv.com/fonts/Eudoxus-Sans.css"
       />
     </Head>
-    <Component {...pageProps} />
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <Component {...pageProps} />
+    </ThemeProvider>
   </>
 );
 

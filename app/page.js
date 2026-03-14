@@ -15,7 +15,7 @@ import {
 } from "../sections";
 
 const Page = () => (
-  <div className="bg-primary-bg overflow-clip">
+  <div className="bg-primary-bg dark:bg-primary-black overflow-clip transition-colors duration-300">
     <Navbar />
     <Hero />
     <div className="relative">
