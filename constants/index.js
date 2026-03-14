@@ -1,9 +1,9 @@
 import Planet_1 from "../public/images/floragel.jpg";
 import Planet_3 from "../public/images/trakant.jpg";
 import Planet_2 from "../public/images/robotix.jpg";
-import Planet_6 from "../public/planet-06.png";
-import Planet_7 from "../public/planet-07.png";
-import Planet_8 from "../public/planet-08.png";
+import Planet_6 from "../public/bdc1.png";
+import Planet_7 from "../public/hec2.svg";
+import Planet_8 from "../public/col3.png";
 import vrpano from "../public/vrpano.svg";
 import headset from "../public/headset.svg";
 import twitter from "../public/twitter.svg";
@@ -56,24 +56,23 @@ export const newFeatures = [
 export const insights = [
   {
     imgUrl: Planet_6,
-    title: "Le futur du Web Design 3D",
-    subtitle:
-      "Découvrez comment les technologies immersives transforment l'expérience utilisateur et le taux de conversion.",
+    title: "5 raisons pour lesquelles votre entreprise doit avoir un bon site Web",
+    subtitle: "Même si votre entreprise n’effectue aucune vente en ligne, il lui faut absolument un bon site Web pour tirer son épingle du jeu sur le marché actuel. C’est souvent en visitant un site Web que la clientèle potentielle se renseigne au sujet d’une entreprise. Il peut vous aider à faire face aux fluctuations inévitables du marché.",
     url: "https://www.nayl.ca/",
   },
   {
     imgUrl: Planet_7,
-    title: "Optimisation de Performance",
+    title: "Pourquoi le SEO est important ?",
     subtitle:
-      "Pourquoi chaque milliseconde compte pour votre SEO et la rétention de vos clients en 2026.",
-    url: "https://alban-pixel.github.io/portfolio/",
+      "Le SEO est un levier stratégique pour toute entreprise souhaitant accroître sa visibilité en ligne. En optimisant votre site pour les moteurs de recherche, vous améliorez votre positionnement dans les résultats de recherche, ce qui augmente le trafic qualifié vers votre site et, par conséquent, vos chances de convertir des prospects en clients.",
+    url: "https://digital.hec.ca/blog/pourquoi-le-seo-est-important/",
   },
   {
     imgUrl: Planet_8,
-    title: "Sécurité & Scalabilité",
+    title: "Comment un site web renforce la confiance de vos clients ?",
     subtitle:
-      "Les meilleures pratiques pour protéger vos données et assurer la croissance de votre infrastructure web.",
-    url: "https://www.linkedin.com/in/alban-delforge-aab7223a6/",
+      "Un site web professionnel est un gage de crédibilité et de sérieux pour votre entreprise. Il permet à vos clients de trouver facilement les informations dont ils ont besoin, de comprendre vos services et de vous contacter en toute confiance. De plus, un site web bien conçu renforce votre image de marque et vous différencie de vos concurrents.",
+    url: "https://collaborsimpact.com/2026/01/17/comment-un-site-web-renforce-la-confiance-de-vos-clients/",
   },
 ];
 

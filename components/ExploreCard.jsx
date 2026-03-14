@@ -19,7 +19,6 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     <Image
       src={imgUrl}
       alt={title}
-      placeholder="blur"
       className="absolute w-full h-full object-cover object-top rounded-[24px] transition-opacity duration-300 group-hover:opacity-80"
     />
     {active !== id ? (
