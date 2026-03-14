@@ -126,22 +126,44 @@ const translations = {
         }
       ]
     },
+    exploreData: [
+      {
+        title: "Floragel",
+        description: "Solution naturelle d'arrosage automatique pour plantes développée avec JA Québec. Le gel Floragel garantit jusqu'à 2 semaines d'autonomie écologique, intégrant un chatbot intelligent pour l'assistance.",
+        btnText: "Visiter le site"
+      },
+      {
+        title: "StanRbotix",
+        description: "Site officiel de l'équipe de robotique FRC StanRbotix 6622. Une plateforme immersive pour suivre l'actualité de l'équipe, ses compétitions FRC, découvrir les innovations techniques.",
+        btnText: "Visiter le site"
+      },
+      {
+        title: "Trakant",
+        description: "Application mobile de productivité gamifiée développée pour le Hackathon HackDécouverte. Transformez vos habitudes en jeu : chaque action fait grandir votre colonie de fourmis.",
+        btnText: "Voir sur GitHub"
+      }
+    ],
+    projectModal: {
+      status: "Projet terminé",
+      visitBtn: "Visiter le site",
+      githubBtn: "Voir sur GitHub"
+    },
     insights: {
-      title: "Études de cas",
-      heading: "Découvrez les résultats d'avoir un site Web",
+      title: "Articles & Conseils",
+      heading: "Restez à jour avec le monde du Web",
       readMore: "Lire l'article",
       items: [
         {
-          title: "5 raisons pour lesquelles votre entreprise doit avoir un bon site Web",
-          subtitle: "Même si votre entreprise n’effectue aucune vente en ligne, il lui faut absolument un bon site Web pour tirer son épingle du jeu sur le marché actuel."
+          title: "Pourquoi un design responsive est crucial en 2026",
+          subtitle: "Avec plus de 60% du trafic web provenant des mobiles, découvrez comment l'adaptation fluide de votre site impacte directement vos conversions."
         },
         {
-          title: "Pourquoi le SEO est important ?",
-          subtitle: "Le SEO est un levier stratégique pour toute entreprise souhaitant accroître sa visibilité en ligne. En optimisant votre site, vous augmentez le trafic qualifié."
+          title: "Optimiser les performances de votre site Next.js",
+          subtitle: "La vitesse de chargement est le premier critère de rétention. Apprenez les meilleures pratiques pour offrir une expérience instantanée."
         },
         {
-          title: "Comment un site web renforce la confiance ?",
-          subtitle: "Un site web professionnel est un gage de crédibilité. Il permet à vos clients de vous contacter en toute confiance et renforce votre image."
+          title: "L'importance de l'accessibilité web moderne",
+          subtitle: "Rendre votre site accessible à tous n'est plus une option. Découvrez comment un design inclusif améliore l'expérience globale."
         }
       ]
     },
@@ -338,26 +360,48 @@ const translations = {
         },
         {
           role: "Backend Developer",
-          desc: "Architect of robust and scalable solutions. Alban designs the technical foundations of each project, from high-performance APIs to optimized databases, ensuring reliability and security in every line of code."
+          desc: "Architect of robust and scalable solutions. Alban designs the technical foundations of each project, from high-performance APIs to optimized databases, ensuring reliability and security"
         }
       ]
     },
+    exploreData: [
+      {
+        title: "Floragel",
+        description: "Natural automatic watering solution for plants developed with JA Quebec. Floragel gel guarantees up to 2 weeks of ecological autonomy, integrating an intelligent chatbot for assistance.",
+        btnText: "Visit the site"
+      },
+      {
+        title: "StanRbotix",
+        description: "Official website of the StanRbotix 6622 FRC robotics team. An immersive platform to follow the team's news, FRC competitions, and discover technical innovations.",
+        btnText: "Visit the site"
+      },
+      {
+        title: "Trakant",
+        description: "Gamified mobile productivity application developed for the HackDécouverte Hackathon. Transform your habits into a game: each action grows your ant colony.",
+        btnText: "View on GitHub"
+      }
+    ],
+    projectModal: {
+      status: "Project completed",
+      visitBtn: "Visit site",
+      githubBtn: "View on GitHub"
+    },
     insights: {
-      title: "Case Studies",
-      heading: "Discover the results of having a Website",
+      title: "Articles & Tips",
+      heading: "Stay up to date with the Web world",
       readMore: "Read article",
       items: [
         {
-          title: "5 reasons why your business needs a good website",
-          subtitle: "Even if your business doesn't make any online sales, it absolutely needs a good website to stand out in today's market."
+          title: "Why responsive design is crucial in 2026",
+          subtitle: "With more than 60% of web traffic coming from mobile, find out how fluid adaptation of your site directly impacts your conversions."
         },
         {
-          title: "Why is SEO important?",
-          subtitle: "SEO is a strategic lever for any business wishing to increase its online visibility. By optimizing your site, you increase qualified traffic."
+          title: "Optimize the performance of your Next.js site",
+          subtitle: "Loading speed is the number one retention criterion. Learn the best practices for providing an instant experience to your users."
         },
         {
-          title: "How a website strengthens trust?",
-          subtitle: "A professional website is a guarantee of credibility. It allow your customers to contact you with confidence and strengthens your brand image."
+          title: "The importance of modern web accessibility",
+          subtitle: "Making your site accessible to all is no longer an option. Find out how inclusive design improves overall experience and brand reach."
         }
       ]
     },

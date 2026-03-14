@@ -3,9 +3,15 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import styles from '../styles';
+import { useLanguage } from '../context/LanguageContext';
 
 const ProjectModal = ({ isOpen, closeModal, project }) => {
+  const { t } = useLanguage();
   if (!project) return null;
+
+  // Find index of the project in exploreWorlds to get translated data
+  const projectIndex = ["world-1", "world-2", "world-3"].indexOf(project.id);
+  const translatedProject = t("exploreData")[projectIndex] || {};
 
   return (
     <AnimatePresence>
@@ -42,14 +48,14 @@ const ProjectModal = ({ isOpen, closeModal, project }) => {
                   {/* Blurred Background for Mobile format */}
                   <Image
                     src={project.imgUrl}
-                    alt={project.title}
+                    alt={translatedProject.title || project.title}
                     className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-110"
                   />
                   {/* The 9:16 Mobile Image */}
                   <div className="relative z-10 h-[85%] aspect-[9/16] shadow-2xl rounded-[16px] overflow-hidden border-[4px] border-primary-black/50 dark:border-white/10">
                     <Image
                       src={project.imgUrl}
-                      alt={project.title}
+                      alt={translatedProject.title || project.title}
                       className="object-cover w-full h-full"
                     />
                   </div>
@@ -57,7 +63,7 @@ const ProjectModal = ({ isOpen, closeModal, project }) => {
               ) : (
                 <Image
                   src={project.imgUrl}
-                  alt={project.title}
+                  alt={translatedProject.title || project.title}
                   className="object-cover w-full h-full"
                 />
               )}
@@ -67,13 +73,13 @@ const ProjectModal = ({ isOpen, closeModal, project }) => {
             {/* Right side - Text */}
             <div className="w-full md:w-7/12 p-6 md:p-10 flex flex-col justify-center">
               <span className="text-accent-blue dark:text-dark-accent font-bold uppercase tracking-widest text-[12px] mb-2">
-                Projet terminé
+                {t("projectModal.status")}
               </span>
               <h2 className="text-3xl md:text-4xl font-extrabold text-primary-text dark:text-white mb-4">
-                {project.title}
+                {translatedProject.title || project.title}
               </h2>
               <p className="text-[16px] text-secondary-text dark:text-secondary-white leading-relaxed mb-6">
-                {project.description}
+                {translatedProject.description || project.description}
               </p>
 
               {/* Tech Stack */}
@@ -95,7 +101,7 @@ const ProjectModal = ({ isOpen, closeModal, project }) => {
                 rel="noopener noreferrer"
                 className="w-full md:w-fit px-6 py-3 bg-accent-blue dark:bg-dark-accent text-white font-bold rounded-xl hover:bg-opacity-90 transition-all text-center text-sm"
               >
-                Visiter le site
+                {translatedProject.btnText || (project.id === "world-3" ? t("projectModal.githubBtn") : t("projectModal.visitBtn"))}
               </a>
             </div>
           </motion.div>

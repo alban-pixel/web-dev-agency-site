@@ -42,7 +42,7 @@ const Explore = () => {
             <ExploreCard
               key={world.id}
               {...world}
-              title={t("exploreData")[index]} // Use translated title
+              title={t("exploreData")[index]?.title || world.title} // Use translated title object
               index={index}
               active={activeCard}
               handleHover={setActiveCard}
