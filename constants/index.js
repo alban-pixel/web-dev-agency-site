@@ -10,6 +10,9 @@ import twitter from "../public/twitter.svg";
 import linkedin from "../public/linkedin.svg";
 import instagram from "../public/instagram.svg";
 import facebook from "../public/facebook.svg";
+import nayl from "../public/images/nayl.jpg";
+import alban from "../public/images/1768696144491.jpg";
+
 
 export const exploreWorlds = [
   {
@@ -100,19 +103,6 @@ export const pricingPlans = [
     buttonText: "Développer mon site"
   },
   {
-    id: "enterprise",
-    title: "Sur Mesure",
-    price: "Sur devis",
-    features: [
-      "Application Web complète",
-      "Fonctionnalités avancées",
-      "Design UI/UX Premium",
-      "Intégration API & Base de données",
-      "Support prioritaire"
-    ],
-    buttonText: "Contactez-nous"
-  },
-  {
     id: "maintenance",
     title: "Service Après-Vente",
     price: "300$/an",
@@ -125,6 +115,19 @@ export const pricingPlans = [
       "Sauvegardes régulières"
     ],
     buttonText: "Souscrire au maintien"
+  },
+  {
+    id: "enterprise",
+    title: "Sur Mesure",
+    price: "Sur devis",
+    features: [
+      "Application Web complète",
+      "Fonctionnalités avancées",
+      "Design UI/UX Premium",
+      "Intégration API & Base de données",
+      "Support prioritaire"
+    ],
+    buttonText: "Contactez-nous"
   }
 ];
 
@@ -133,17 +136,17 @@ export const teamMembers = [
     name: "Nayl",
     role: "Développeur Frontend",
     desc: "Passionné par le design interactif et les interfaces modernes. Nayl crée des expériences web fluides et visuellement saisissantes, en combinant créativité artistique et maîtrise technique des dernières technologies frontend.",
-    imgUrl: "/images/nayl.jpg",
+    imgUrl: nayl,
     portfolioUrl: "https://www.nayl.ca/",
-    linkedinUrl: "#"
+    linkedinUrl: "https://www.linkedin.com/in/nayl-lahlou/"
   },
   {
     name: "Alban",
     role: "Développeur Backend",
     desc: "Architecte de solutions robustes et scalables. Alban conçoit les fondations techniques de chaque projet, des APIs performantes aux bases de données optimisées, garantissant fiabilité et sécurité à chaque ligne de code.",
-    imgUrl: "/images/alban.jpg",
+    imgUrl: alban,
     portfolioUrl: "https://alban-pixel.github.io/portfolio/",
-    linkedinUrl: "#"
+    linkedinUrl: "https://www.linkedin.com/in/alban-delforge-aab7223a6/"
   }
 ];
 

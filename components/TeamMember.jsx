@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { fadeIn } from "../utils/motion";
 
 const TeamMember = ({ name, role, desc, imgUrl, portfolioUrl, index }) => (
@@ -23,7 +24,7 @@ const TeamMember = ({ name, role, desc, imgUrl, portfolioUrl, index }) => (
     {/* Team member photo */}
     {imgUrl ? (
       <div className="w-[120px] h-[120px] rounded-full mb-6 relative z-10 overflow-hidden border-[3px] border-accent-blue/30 dark:border-dark-accent/30">
-        <img
+        <Image
           src={imgUrl}
           alt={name}
           className="w-full h-full object-cover"
