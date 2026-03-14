@@ -25,18 +25,18 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
       className="absolute w-full h-full object-cover rounded-[24px] transition-opacity duration-300 group-hover:opacity-80"
     />
     {active !== id ? (
-      <h3 className="font-semibold sm:text-[26px] text-[18px] text-primary-text dark:text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0] pointer-events-none">
+      <h3 className="font-semibold sm:text-[26px] text-[18px] text-primary-text dark:text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0] pointer-events-none drop-shadow-md">
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] pointer-events-none">
+      <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-white/70 dark:bg-black/50 backdrop-blur-[4px] rounded-b-[24px] pointer-events-none transition-colors duration-300">
         <div
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
           <Image
             src={headset}
             alt="headset"
-            className="w-1/2 h-1/2 object-contain"
+            className="w-1/2 h-1/2 object-contain dark:invert"
           />
         </div>
         <p className="font-normal text-[16px] leading-[20px] text-primary-text dark:text-white uppercase ">

@@ -106,7 +106,8 @@ export const pricingPlans = [
       "Fonctionalités sur mesure",
       "Design Responsive",
       "Optimisation SEO avancée",
-      "Hébergement 1 an inclus"
+      "Hébergement 1 an inclus",
+      "3 mois de maintenance inclus"
     ],
     buttonText: "Développer mon site"
   },
@@ -126,7 +127,7 @@ export const pricingPlans = [
   {
     id: "maintenance",
     title: "Service Après-Vente",
-    price: "1200$",
+    price: "300$/an",
     features: [
       "Maintenance continue du site",
       "Mises à jour de sécurité",

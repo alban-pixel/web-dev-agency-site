@@ -59,7 +59,7 @@ const PricingCard = ({ id, title, price, features, buttonText, index }) => {
           {price === "1500$" && (
             <span className="font-normal text-[16px] text-secondary-text dark:text-secondary-white">/projet</span>
           )}
-          {price === "1200$" && (
+          {(price === "1200$" || price === "300$") && (
             <span className="font-normal text-[16px] text-secondary-text dark:text-secondary-white">/an</span>
           )}
         </div>
