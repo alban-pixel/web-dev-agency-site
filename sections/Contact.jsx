@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import emailjs from '@emailjs/browser';
 import styles from "../styles";
 import { staggerContainer, fadeIn } from "../utils/motion";
 import { TypingText, TitleText } from "../components";
@@ -12,7 +13,7 @@ const Contact = () => {
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState("idle"); // idle, sending, success
+  const [status, setStatus] = useState("idle"); // idle, sending, success, error
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,13 +23,30 @@ const Contact = () => {
     e.preventDefault();
     setStatus("sending");
 
-    // Simulation d'envoi (peut être remplacé par Formspree ou une API)
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // Pour utiliser EmailJS, vous devez créer un compte sur emailjs.com
+      // et remplacer les IDs ci-dessous ou utiliser des variables d'environnement.
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replaced by user in dashboard
+        'YOUR_TEMPLATE_ID', // Replaced by user in dashboard
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: 'maltos.can@gmail.com',
+        },
+        'YOUR_PUBLIC_KEY' // Replaced by user in dashboard
+      );
 
-    setStatus("success");
-    setFormData({ name: "", email: "", subject: "", message: "" });
-
-    setTimeout(() => setStatus("idle"), 5000);
+      setStatus("success");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      setTimeout(() => setStatus("idle"), 5000);
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 5000);
+    }
   };
 
   return (
@@ -116,8 +134,28 @@ const Contact = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                     </svg>
                   </motion.div>
-                  <h3 className="text-primary-text dark:text-white font-bold text-2xl mb-2">Message PAS envoyé !</h3>
-                  <p className="text-secondary-text dark:text-secondary-white">Merci de nous avoir contactés. Nous vous répondrons très bientôt. FAKE LE API EST PAS ENCORE FAIT CA FAIT RIEN</p>
+                  <h3 className="text-primary-text dark:text-white font-bold text-2xl mb-2">Message envoyé !</h3>
+                  <p className="text-secondary-text dark:text-secondary-white">Merci de nous avoir contactés. Nous vous répondrons très bientôt à l'adresse maltos.can@gmail.com.</p>
+                </motion.div>
+              )}
+              {status === "error" && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="absolute inset-0 bg-primary-bg/90 dark:bg-primary-black/90 z-20 flex flex-col items-center justify-center p-8 text-center"
+                >
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(239,68,68,0.3)]"
+                  >
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </motion.div>
+                  <h3 className="text-primary-text dark:text-white font-bold text-2xl mb-2">Erreur d'envoi</h3>
+                  <p className="text-secondary-text dark:text-secondary-white">Une erreur est survenue lors de l'envoi. Veuillez réessayer plus tard ou nous contacter directement par email.</p>
                 </motion.div>
               )}
             </AnimatePresence>

@@ -195,7 +195,7 @@ export const faqs = [
   },
   {
     question: "Proposez-vous un service de maintenance après la livraison ?",
-    answer: "Oui ! Nous offrons un forfait Service Après-Vente à 1200$/an qui inclut la maintenance continue, les mises à jour de sécurité, le support technique prioritaire et un monitoring 24/7 pour assurer la pérennité de votre site."
+    answer: "Oui ! Nous offrons un forfait Service Après-Vente à 300$/an qui inclut la maintenance continue, les mises à jour de sécurité, le support technique prioritaire et un monitoring 24/7 pour assurer la pérennité de votre site."
   }
 ];
 
