@@ -58,19 +58,22 @@ export const insights = [
     imgUrl: Planet_6,
     title: "Le futur du Web Design 3D",
     subtitle:
-      "ARTICLE RANDOM A METTRE",
+      "Découvrez comment les technologies immersives transforment l'expérience utilisateur et le taux de conversion.",
+    url: "https://www.nayl.ca/",
   },
   {
     imgUrl: Planet_7,
-    title: "ARTICLE RANDOM A METTRE",
+    title: "Optimisation de Performance",
     subtitle:
-      "ARTICLE RANDOM A METTRE",
+      "Pourquoi chaque milliseconde compte pour votre SEO et la rétention de vos clients en 2026.",
+    url: "https://alban-pixel.github.io/portfolio/",
   },
   {
     imgUrl: Planet_8,
-    title: "ARTICLE RANDOM A METTRE",
+    title: "Sécurité & Scalabilité",
     subtitle:
-      "ARTICLE RANDOM A METTRE",
+      "Les meilleures pratiques pour protéger vos données et assurer la croissance de votre infrastructure web.",
+    url: "https://www.linkedin.com/in/alban-delforge-aab7223a6/",
   },
 ];
 
