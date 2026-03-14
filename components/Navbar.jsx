@@ -44,7 +44,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#footer"
+            href="#contact"
             className="py-2 px-6 bg-[#25618B] rounded-[32px] font-bold text-[14px] text-white hover:bg-opacity-80 transition-all duration-300"
           >
             Contact
@@ -81,7 +81,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#footer"
+            href="#contact"
             onClick={() => setMenuOpen(false)}
             className="py-3 px-6 bg-[#25618B] rounded-[32px] font-bold text-[16px] text-white text-center hover:bg-opacity-80 transition-all duration-300"
           >

@@ -11,6 +11,7 @@ import {
   Pricing,
   Team,
   FAQ,
+  Contact,
 } from "../sections";
 
 const Home = () => (
@@ -41,8 +42,12 @@ const Home = () => (
     <div className="relative">
       <Feedback />
       <div className="gradient-05 z-0" />
+      <Contact />
     </div>
-    <Footer />
+    <div className="relative">
+      <div className="gradient-04 z-0" />
+      <Footer />
+    </div>
   </div>
 );
 

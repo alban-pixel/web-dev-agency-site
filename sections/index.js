@@ -9,6 +9,7 @@ import Feedback from "./Feedback";
 import Pricing from "./Pricing";
 import Team from "./Team";
 import FAQ from "./FAQ";
+import Contact from "./Contact";
 
 export {
   Hero,
@@ -22,4 +23,5 @@ export {
   Pricing,
   Team,
   FAQ,
+  Contact,
 };
