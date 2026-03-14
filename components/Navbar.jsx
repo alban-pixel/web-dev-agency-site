@@ -17,7 +17,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={`${styles.xPaddings} py-8 sticky top-0 z-50 bg-primary-black/80 backdrop-blur-md`}>
+    <nav className={`${styles.xPaddings} py-8 fixed w-full top-0 z-50 bg-primary-black/80 backdrop-blur-md transition-all`}>
       <div
         className="absolute w-[50%] inset-0 gradient-01 opacity-50"
       />

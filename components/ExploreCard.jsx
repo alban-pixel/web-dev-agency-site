@@ -13,7 +13,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
       active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
     } ${
       styles.flexCenter
-    } min-w-[110px] h-[600px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer z-10`}
+    } min-w-[120px] h-[600px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer rounded-[24px] overflow-hidden`}
     onClick={() => handleClick(id)}
   >
     <Image
