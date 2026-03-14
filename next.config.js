@@ -1,8 +1,8 @@
-/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  experimental: {
-    // appDir: true,
-  },
+  output: 'export',
+  basePath: isProd ? '/web-dev-agency-site' : '',
   images: {
     unoptimized: true,
   },

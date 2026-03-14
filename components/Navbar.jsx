@@ -29,7 +29,7 @@ const Navbar = () => {
         className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
       >
         <a href="#" className="font-extrabold text-[24px] leading-[30px] text-white uppercase">
-          Web Agency
+          MALTOS DEV
         </a>
 
         {/* Desktop Nav */}

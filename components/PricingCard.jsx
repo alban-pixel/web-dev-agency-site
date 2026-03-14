@@ -12,7 +12,10 @@ const PricingCard = ({ id, title, price, features, buttonText, index }) => (
       <h3 className="font-bold text-[32px] text-white mb-4">{title}</h3>
       <div className="flex items-baseline gap-2 mb-8">
         <span className="font-extrabold text-[48px] text-white">{price}</span>
-        {price !== "Sur devis" && (
+        {price == "800$" && (
+          <span className="font-normal text-[16px] text-secondary-white">/site</span>
+        )}
+        {price == "1500$" && (
           <span className="font-normal text-[16px] text-secondary-white">/projet</span>
         )}
       </div>

@@ -41,9 +41,9 @@ const Footer = () => (
           <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
           <div className="flex items-center justify-between flex-wrap gap-4">
-            <h4 className="font-extrabold text-[24px] text-white">WEB AGENCY</h4>
+            <h4 className="font-extrabold text-[24px] text-white">Maltos Dev</h4>
             <p className="font-normal text-[14px] text-white opacity-50">
-              Copyright © 2024 Web Agency. Tous droits réservés.
+              Copyright © 2026 Maltos Web Dev Agency. Tous droits réservés.
             </p>
 
             <div className="flex gap-4">

@@ -1,11 +1,36 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "../styles";
 import { staggerContainer, fadeIn } from "../utils/motion";
 import { TypingText, TitleText } from "../components";
+import { teamMembers } from "../constants";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("idle"); // idle, sending, success
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    // Simulation d'envoi (peut être remplacé par Formspree ou une API)
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    setStatus("success");
+    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    setTimeout(() => setStatus("idle"), 5000);
+  };
+
   return (
     <section className={`${styles.paddings} relative z-10`} id="contact">
       <motion.div
@@ -29,18 +54,34 @@ const Contact = () => {
           >
             <div>
               <h4 className="font-bold sm:text-[24px] text-[20px] text-white">
-                Adresse
+                Nous retrouver sur LinkedIn
               </h4>
-              <p className="mt-[8px] font-normal sm:text-[16px] text-[14px] text-secondary-white">
-                123 Avenue des Champs-Élysées, 75008 Paris
-              </p>
+              <div className="flex flex-col gap-3 mt-[12px]">
+                {teamMembers.map((member) => (
+                  <a
+                    key={member.name}
+                    href={member.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-secondary-white hover:text-white transition-colors flex flex-col gap-1 group"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-[#25618B] group-hover:scale-125 transition-transform" />
+                      <span className="font-semibold text-white">{member.name}</span>
+                    </div>
+                    <p className="text-[14px] ml-4 opacity-80 group-hover:opacity-100 italic transition-opacity">
+                      Consulter le profil professionnel de {member.name}
+                    </p>
+                  </a>
+                ))}
+              </div>
             </div>
             <div>
               <h4 className="font-bold sm:text-[24px] text-[20px] text-white">
                 Email
               </h4>
               <p className="mt-[8px] font-normal sm:text-[16px] text-[14px] text-secondary-white">
-                contact@webagency.fr
+                contact@maltos.dev
               </p>
             </div>
             <div>
@@ -48,7 +89,7 @@ const Contact = () => {
                 Téléphone
               </h4>
               <p className="mt-[8px] font-normal sm:text-[16px] text-[14px] text-secondary-white">
-                +33 1 23 45 67 89
+                +1 514 824 0732 RANDOM NUMEROT A CHANGER
               </p>
             </div>
           </motion.div>
@@ -56,36 +97,76 @@ const Contact = () => {
           {/* Contact Form */}
           <motion.div
             variants={fadeIn("left", "tween", 0.2, 1)}
-            className="flex-[1.5] bg-white/5 p-8 rounded-[32px] border-[1px] border-[#6a6a6a]"
+            className="flex-[1.5] bg-white/5 p-8 rounded-[32px] border-[1px] border-[#6a6a6a] relative overflow-hidden"
           >
-            <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+            <AnimatePresence>
+              {status === "success" && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="absolute inset-0 bg-primary-black/90 z-20 flex flex-col items-center justify-center p-8 text-center"
+                >
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(34,197,94,0.3)]"
+                  >
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </motion.div>
+                  <h3 className="text-white font-bold text-2xl mb-2">Message PAS envoyé !</h3>
+                  <p className="text-secondary-white">Merci de nous avoir contactés. Nous vous répondrons très bientôt. FAKE LE API EST PAS ENCORE FAIT CA FAIT RIEN</p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
               <div className="flex sm:flex-row flex-col gap-6">
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
                   placeholder="Votre nom"
                   className="flex-1 bg-transparent border-b-[1px] border-[#6a6a6a] text-white p-4 focus:outline-none focus:border-white transition-colors"
                 />
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                   placeholder="Votre email"
                   className="flex-1 bg-transparent border-b-[1px] border-[#6a6a6a] text-white p-4 focus:outline-none focus:border-white transition-colors"
                 />
               </div>
               <input
                 type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                required
                 placeholder="Sujet de votre message"
                 className="bg-transparent border-b-[1px] border-[#6a6a6a] text-white p-4 focus:outline-none focus:border-white transition-colors"
               />
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
                 placeholder="Votre message"
                 rows="4"
                 className="bg-transparent border-b-[1px] border-[#6a6a6a] text-white p-4 focus:outline-none focus:border-white transition-colors resize-none"
               />
               <button
                 type="submit"
-                className="mt-4 py-4 px-8 bg-[#25618B] rounded-[32px] w-fit font-bold text-[16px] text-white hover:bg-opacity-80 transition-all duration-300 self-end"
+                disabled={status === "sending"}
+                className="mt-4 py-4 px-8 bg-[#25618B] rounded-[32px] w-fit font-bold text-[16px] text-white hover:bg-opacity-80 transition-all duration-300 self-end disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Envoyer le message
+                {status === "sending" ? "Envoi en cours..." : "Envoyer le message"}
               </button>
             </form>
           </motion.div>

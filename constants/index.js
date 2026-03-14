@@ -56,38 +56,38 @@ export const newFeatures = [
   },
   {
     imgUrl: headset,
-    title: "Mobile-First",
+    title: "Design Unique",
     subtitle:
-      "Des designs entièrement responsifs qui s'affichent parfaitement sur tous les appareils.",
+      "Des designs uniques et modernes qui attirent l'attention, convertissent les visiteurs et se démarquent de la concurrence.",
   },
 ];
 
 export const insights = [
   {
     imgUrl: Planet_6,
-    title: "Comment une refonte a augmenté les demandes clients de 200%",
+    title: "ARTICLE RANDOM A METTRE",
     subtitle:
-      "Découvrez notre étude de cas sur la transformation de la présence en ligne d'une boulangerie locale.",
+      "ARTICLE RANDOM A METTRE",
   },
   {
     imgUrl: Planet_7,
-    title: "5 conseils SEO essentiels pour les petites entreprises",
+    title: "ARTICLE RANDOM A METTRE",
     subtitle:
-      "Boostez votre classement dans les moteurs de recherche avec notre guide pratique.",
+      "ARTICLE RANDOM A METTRE",
   },
   {
     imgUrl: Planet_8,
-    title: "Pourquoi votre entreprise a besoin d'une application web moderne",
+    title: "ARTICLE RANDOM A METTRE",
     subtitle:
-      "Découvrez les avantages des applications web sur mesure pour optimiser vos opérations.",
+      "ARTICLE RANDOM A METTRE",
   },
 ];
 
 export const pricingPlans = [
   {
     id: "basic",
-    title: "Vitrine",
-    price: "499€",
+    title: "Site regulier",
+    price: "800$",
     features: [
       "Landing Page moderne",
       "Design Responsive",
@@ -99,16 +99,16 @@ export const pricingPlans = [
   },
   {
     id: "pro",
-    title: "E-Commerce",
-    price: "1299€",
+    title: "Site Pro",
+    price: "1500$",
     features: [
       "Site moderne jusqu'à 10 pages",
-      "Boutique en ligne complète",
-      "Paiements sécurisés",
+      "Fonctionalités sur mesure",
       "Design Responsive",
-      "Optimisation SEO avancée"
+      "Optimisation SEO avancée",
+      "Hébergement 1 an inclus"
     ],
-    buttonText: "Développer ma boutique"
+    buttonText: "Développer mon site"
   },
   {
     id: "enterprise",
@@ -127,30 +127,29 @@ export const pricingPlans = [
 
 export const teamMembers = [
   {
-    name: "Alex",
-    role: "Lead Developer",
-    desc: "Passionné par React et la performance web."
+    name: "Nayl",
+    role: "TITRE A METTRE",
+    desc: "DESCRIPTION A METTRE",
+    portfolioUrl: "https://www.nayl.ca/",
+    linkedinUrl: "#"
   },
   {
-    name: "Sophie",
-    role: "UI/UX Designer",
-    desc: "Experte en création d'interfaces intuitives et modernes."
-  },
-  {
-    name: "Thomas",
-    role: "Expert SEO",
-    desc: "Il fait en sorte que votre site soit vu par tous."
+    name: "Alban",
+    role: "TITRE A METTRE",
+    desc: "DESCRIPTION A METTRE",
+    portfolioUrl: "https://alban-pixel.github.io/portfolio/",
+    linkedinUrl: "#"
   }
 ];
 
 export const faqs = [
   {
     question: "Combien de temps faut-il pour créer un site ?",
-    answer: "Pour un site vitrine, comptez en général 2 à 3 semaines. Pour une boutique en ligne ou un site sur mesure, le délai peut aller de 4 à 8 semaines selon la complexité."
+    answer: "Pour un site vitrine, comptez en général 1 à 2 semaines. Pour une boutique en ligne ou un site sur mesure, le délai peut aller de 3 à 6 semaines selon la complexité."
   },
   {
     question: "Mon site sera-t-il adapté aux mobiles ?",
-    answer: "Absolument ! Tous nos sites sont 'Mobile-First' et s'adaptent parfaitement à toutes les tailles d'écrans (smartphones, tablettes, ordinateurs)."
+    answer: "Absolument ! Tous nos sites sont multiplateformes et s'adaptent parfaitement à toutes les tailles d'écrans (smartphones, tablettes, ordinateurs)."
   },
   {
     question: "M'aiderez-vous avec le référencement (SEO) ?",

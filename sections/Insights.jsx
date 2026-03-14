@@ -17,7 +17,7 @@ const Insights = () => (
     >
       <TypingText title="| Études de cas" textStyles="text-center" />
       <TitleText
-        title={<>Découvrez nos réussites</>}
+        title={<>Découvrez les résultats d'avoir un site Web</>}
         textStyles="text-center"
       />
 
