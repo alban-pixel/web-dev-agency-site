@@ -8,7 +8,7 @@ import stamp from "../public/stamp.png";
 import cover from "../public/cover.png";
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6 pt-[120px]`}>
     {/* this is a container div in which we can animate children elements */}
     <motion.div
       variants={staggerContainer}
