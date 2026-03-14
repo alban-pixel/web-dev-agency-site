@@ -27,8 +27,8 @@ const Contact = () => {
       // Pour utiliser EmailJS, vous devez créer un compte sur emailjs.com
       // et remplacer les IDs ci-dessous ou utiliser des variables d'environnement.
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replaced by user in dashboard
-        'YOUR_TEMPLATE_ID', // Replaced by user in dashboard
+        'service_ueg3kux', // Replaced by user in dashboard
+        'template_fxwa4m9', // Replaced by user in dashboard
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -36,7 +36,7 @@ const Contact = () => {
           message: formData.message,
           to_email: 'maltos.can@gmail.com',
         },
-        'YOUR_PUBLIC_KEY' // Replaced by user in dashboard
+        'h4xhyrTOmsPzvBWUb' // Replaced by user in dashboard
       );
 
       setStatus("success");
