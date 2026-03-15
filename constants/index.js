@@ -60,10 +60,9 @@ export const newFeatures = [
 export const insights = [
   {
     imgUrl: Planet_6,
-    title: "L'importance d'un design responsive en 2026",
-    subtitle:
-      "Avec plus de 60% du trafic web provenant des mobiles, découvrez comment l'adaptation fluide de votre site impacte directement vos conversions et votre SEO.",
-    url: "https://www.forbes.com/sites/forbesagencycouncil/2017/02/03/the-importance-of-a-mobile-friendly-website/"
+    title: "5 raisons pour lesquelles votre entreprise doit avoir un bon site Web",
+    subtitle: "Même si votre entreprise n’effectue aucune vente en ligne, il lui faut absolument un bon site Web pour tirer son épingle du jeu sur le marché actuel. C’est souvent en visitant un site Web que la clientèle potentielle se renseigne au sujet d’une entreprise. Il peut vous aider à faire face aux fluctuations inévitables du marché.",
+    url: "https://www.bdc.ca/fr/articles-outils/technologie/internet/pourquoi-votre-entreprise-doit-avoir-un-site-web"
   },
   {
     imgUrl: Planet_7,

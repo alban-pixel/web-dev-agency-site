@@ -136,7 +136,7 @@ const translations = {
         btnText: "Visiter le site"
       },
       {
-        title: "Exemple de site informatif (SNT-2nd2)",
+        title: "Site informatif",
         description: "Ceci est un exemple de site informatif que nous pouvons réaliser. Il est actuellement déployé en tant que projet de démonstration.",
         btnText: "Visiter le site"
       },
@@ -157,8 +157,8 @@ const translations = {
       readMore: "Lire l'article",
       items: [
         {
-          title: "L'importance d'un design responsive en 2026",
-          subtitle: "Avec plus de 60% du trafic web provenant des mobiles, découvrez comment l'adaptation fluide de votre site impacte directement vos conversions."
+          title: "5 raisons pour lesquelles votre entreprise doit avoir un bon site Web",
+          subtitle: "Même si votre entreprise n’effectue aucune vente en ligne, il lui faut absolument un bon site Web pour tirer son épingle du jeu sur le marché actuel."
         },
         {
           title: "Pourquoi le SEO est crucial pour votre business",
@@ -372,7 +372,7 @@ const translations = {
         btnText: "Visit the site"
       },
       {
-        title: "Informative Website Example (SNT-2nd2)",
+        title: "Informative Website",
         description: "This is an example of an informative website that we can create. It is currently deployed as a demonstration project.",
         btnText: "Visit the site"
       },
@@ -393,8 +393,8 @@ const translations = {
       readMore: "Read article",
       items: [
         {
-          title: "The importance of a mobile-friendly site",
-          subtitle: "Discover why mobile adaptation is the number 1 success factor for your online presence today."
+          title: "5 reasons why your business needs a good website",
+          subtitle: "Even if your business doesn't make any online sales, it absolutely needs a good website to stand out in today's market."
         },
         {
           title: "Why SEO is crucial for your business",
