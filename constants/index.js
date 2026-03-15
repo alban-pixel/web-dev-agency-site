@@ -1,6 +1,6 @@
 import Planet_1 from "../public/images/floragel.jpg";
 import Planet_3 from "../public/images/trakant.jpg";
-import Planet_2 from "../public/images/robotix.jpg";
+import Planet_2 from "../public/images/snt-2nd2.png";
 import Planet_6 from "../public/bdc1.png";
 import Planet_7 from "../public/hec2.svg";
 import Planet_8 from "../public/col3.png";
@@ -29,7 +29,7 @@ export const exploreWorlds = [
     title: "Exemple de site informatif (SNT-2nd2)",
     description: "Ceci est un exemple de site informatif que nous pouvons réaliser. Il est actuellement déployé en tant que projet de démonstration.",
     stack: ["HTML", "CSS", "JavaScript"],
-    url: "https://maltosdev.github.io/snt-2nd2/"
+    url: "https://alban-pixel.github.io/snt-2nd2/"
   },
   {
     id: "world-3",
