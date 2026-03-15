@@ -25,12 +25,12 @@ const translations = {
     },
     explore: {
       title: "Explorez nos services",
-      heading: "Choisissez le service qui vous correspond",
+      heading: "Observez nos projets passés pour vous faire une idée de ce que nous pouvons faire pour vous.",
       buttonText: "Découvrir ces projets"
     },
     getStarted: {
       title: "Comment commencer",
-      heading: "Démarrer avec Maltos en 3 clics",
+      heading: "Démarrer avec Maltos en 3 étapes",
       steps: [
         "Planifiez un appel découverte gratuit",
         "Nous concevons une stratégie sur mesure",
@@ -261,7 +261,7 @@ const translations = {
     },
     explore: {
       title: "Explore our services",
-      heading: "Choose the service that fits you",
+      heading: "See our past projects to get an idea of what we can do for you.",
       buttonText: "Discover this project"
     },
     getStarted: {

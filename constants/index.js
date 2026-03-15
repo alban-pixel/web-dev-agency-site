@@ -29,7 +29,7 @@ export const exploreWorlds = [
     title: "Exemple de site informatif (SNT-2nd2)",
     description: "Ceci est un exemple de site informatif que nous pouvons réaliser. Il est actuellement déployé en tant que projet de démonstration.",
     stack: ["HTML", "CSS", "JavaScript"],
-    url: "https://alban-pixel.github.io/snt-2nd2/"
+    url: "https://alban-pixel.github.io/SNT-2nd2/"
   },
   {
     id: "world-3",
