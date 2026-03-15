@@ -26,7 +26,7 @@ const translations = {
     explore: {
       title: "Explorez nos services",
       heading: "Choisissez le service qui vous correspond",
-      buttonText: "Découvrir ce service"
+      buttonText: "Découvrir ces projets"
     },
     getStarted: {
       title: "Comment commencer",
@@ -136,8 +136,8 @@ const translations = {
         btnText: "Visiter le site"
       },
       {
-        title: "StanRbotix",
-        description: "Site officiel de l'équipe de robotique FRC StanRbotix 6622. Une plateforme immersive pour suivre l'actualité de l'équipe, ses compétitions FRC, découvrir les innovations techniques.",
+        title: "StanRobotix",
+        description: "Site officiel de l'équipe de robotique FRC StanRobotix 6622. Une plateforme immersive pour suivre l'actualité de l'équipe, ses compétitions FRC, découvrir les innovations techniques. Ce site n'as pas totalement été fait par notre équipe, mais nous nous sommes chargé de la page d'acueil et la page de outreach",
         btnText: "Visiter le site"
       },
       {
@@ -262,7 +262,7 @@ const translations = {
     explore: {
       title: "Explore our services",
       heading: "Choose the service that fits you",
-      buttonText: "Discover this service"
+      buttonText: "Discover this project"
     },
     getStarted: {
       title: "How to get started",
@@ -372,8 +372,8 @@ const translations = {
         btnText: "Visit the site"
       },
       {
-        title: "StanRbotix",
-        description: "Official website of the StanRbotix 6622 FRC robotics team. An immersive platform to follow the team's news, FRC competitions, and discover technical innovations.",
+        title: "StanRobotix",
+        description: "Official website of the StanRobotix 6622 FRC robotics team. An immersive platform to follow the team's news, FRC competitions, and discover technical innovations. This website was not entirely made by our team, but we made the home page and outreach page.",
         btnText: "Visit the site"
       },
       {
