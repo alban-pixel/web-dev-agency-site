@@ -57,7 +57,7 @@ const translations = {
     },
     pricing: {
       title: "Nos Tarifs",
-      heading: "Des solutions adaptées à chaque besoin — 🎁 Promo Exceptionnelle de 25%",
+      heading: "Des solutions adaptées à chaque besoin",
       maintenanceBanner: "💡 <strong>Proposé à la fin de chaque contrat</strong> — Notre forfait Service Après-Vente assure la pérennité de votre site avec un maintien continu, des mises à jour de sécurité et un support prioritaire.",
       plans: [
         {
@@ -67,6 +67,9 @@ const translations = {
             "Landing Page moderne",
             "Design Responsive",
             "Formulaire de contact",
+            "Liaison Page Facebook & Réseaux sociaux",
+            "1 Adresse courriel professionnelle",
+            "Certificat de sécurité SSL",
             "Optimisation SEO de base",
             "Hébergement 1 an inclus"
           ],
@@ -81,6 +84,10 @@ const translations = {
             "Design Responsive",
             "Architecture avec base de donnée (backend)",
             "Interface de gestion (dashboard administrateur)",
+            "Liaison Page Facebook & Réseaux sociaux",
+            "5 Adresses courriel professionnelles",
+            "Certificat de sécurité SSL",
+            "Configuration Google My Business & Maps",
             "Optimisation SEO avancée",
             "Hébergement 1 an inclus",
             "3 mois de maintenance inclus"
@@ -293,7 +300,7 @@ const translations = {
     },
     pricing: {
       title: "Our Pricing",
-      heading: "Solutions adapted to every need — 🎁 Exceptional 25% Promo",
+      heading: "Solutions adapted to every need",
       maintenanceBanner: "💡 <strong>Offered at the end of each contract</strong> — Our After-Sales Service package ensures the longevity of your site with continuous maintenance, security updates, and priority support.",
       plans: [
         {
@@ -303,6 +310,9 @@ const translations = {
             "Modern Landing Page",
             "Responsive Design",
             "Contact Form",
+            "Facebook & Social Media Link",
+            "1 Professional Email Address",
+            "SSL Security Certificate",
             "Basic SEO Optimization",
             "1 year hosting included"
           ],
@@ -317,6 +327,10 @@ const translations = {
             "Responsive Design",
             "Database architecture (backend)",
             "Management interface (admin dashboard)",
+            "Facebook & Social Media Link",
+            "5 Professional Email Addresses",
+            "SSL Security Certificate",
+            "Google My Business & Maps Setup",
             "Advanced SEO Optimization",
             "1 year hosting included",
             "3 months maintenance included"
