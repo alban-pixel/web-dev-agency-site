@@ -25,7 +25,7 @@ const Pricing = () => {
           textStyles="text-center"
         />
 
-        <div className="mt-[50px] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px]">
+        <div className="mt-[50px] grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-[30px] w-full">
           {t("pricing.plans").map((plan, index) => (
             <PricingCard key={`plan-${index}`} {...plan} index={index} />
           ))}

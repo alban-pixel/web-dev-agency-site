@@ -64,14 +64,15 @@ const translations = {
           title: "Offre Essentielle",
           price: "800$",
           features: [
-            "Landing Page moderne",
-            "Design Responsive",
-            "Formulaire de contact",
+            "Landing Page moderne & épurée",
+            "Design Responsive (Multi-écrans)",
+            "Formulaire de contact intelligent",
             "Liaison Page Facebook & Réseaux sociaux",
-            "1 Adresse courriel professionnelle",
-            "Certificat de sécurité SSL",
-            "Optimisation SEO de base",
-            "Hébergement 1 an inclus"
+            "1 Adresse courriel pro (ex: info@)",
+            "Certificat de sécurité SSL (HTTPS)",
+            "Optimisation SEO de base & Indexation",
+            "Hébergement 1 an & Support Maltos",
+            "Optimisation de vitesse standard"
           ],
           buttonText: "Commencer"
         },
@@ -79,18 +80,15 @@ const translations = {
           title: "Offre Premium",
           price: "1500$",
           features: [
-            "Site moderne jusqu'à 10 pages",
-            "Fonctionalités sur mesure",
-            "Design Responsive",
-            "Architecture avec base de donnée (backend)",
-            "Interface de gestion (dashboard administrateur)",
+            "Site moderne complet (jusqu'à 10 pages)",
+            "Design Responsive Premium & Animé",
+            "Formulaire & Base de données (Backend)",
             "Liaison Page Facebook & Réseaux sociaux",
             "5 Adresses courriel professionnelles",
-            "Certificat de sécurité SSL",
+            "Certificat de sécurité SSL (HTTPS)",
             "Configuration Google My Business & Maps",
-            "Optimisation SEO avancée",
-            "Hébergement 1 an inclus",
-            "3 mois de maintenance inclus"
+            "Optimisation SEO avancée & Analytics",
+            "Hébergement 1 an & 3 mois maintenance"
           ],
           buttonText: "Développer mon site"
         },
@@ -98,12 +96,15 @@ const translations = {
           title: "Service Après-Vente",
           price: "300$/an",
           features: [
-            "Maintenance continue du site",
-            "Mises à jour de sécurité",
+            "Maintenance continue & Sécurité",
             "Support technique prioritaire",
             "Modifications de contenu illimitées",
             "Monitoring de performance 24/7",
-            "Sauvegardes régulières"
+            "Sauvegardes régulières hebdomadaires",
+            "Mise à jour des plugins & frameworks",
+            "Rapports de performance mensuels",
+            "Conseils SEO continus",
+            "Intervention urgente incluse"
           ],
           buttonText: "Souscrire au maintien"
         },
@@ -111,11 +112,15 @@ const translations = {
           title: "Sur Mesure",
           price: "Sur devis",
           features: [
-            "Application Web complète",
-            "Fonctionnalités avancées",
-            "Design UI/UX Premium",
-            "Intégration API & Base de données",
-            "Support prioritaire"
+            "✨ Tous les avantages du forfait Premium",
+            "Application Web complexe sur mesure",
+            "Design UI/UX Premium & UX Research",
+            "Intégration API & Systèmes externes",
+            "Support prioritaire 7j/7",
+            "Options multi-langues (FR/EN/ES)",
+            "E-commerce & Paiements sécurisés",
+            "Formation à l'administration du site",
+            "Accompagnement stratégie digitale"
           ],
           buttonText: "Contactez-nous"
         }
@@ -307,14 +312,15 @@ const translations = {
           title: "Essential Offer",
           price: "800$",
           features: [
-            "Modern Landing Page",
-            "Responsive Design",
-            "Contact Form",
+            "Modern & Sleek Landing Page",
+            "Responsive Design (Multi-screen)",
+            "Smart Contact Form",
             "Facebook & Social Media Link",
-            "1 Professional Email Address",
-            "SSL Security Certificate",
-            "Basic SEO Optimization",
-            "1 year hosting included"
+            "1 Professional Email Address (info@)",
+            "SSL Security Certificate (HTTPS)",
+            "Basic SEO & Google Indexing",
+            "1 Year Hosting & Maltos Support",
+            "Standard Speed Optimization"
           ],
           buttonText: "Start"
         },
@@ -322,18 +328,15 @@ const translations = {
           title: "Premium Offer",
           price: "1500$",
           features: [
-            "Modern site up to 10 pages",
-            "Custom features",
-            "Responsive Design",
-            "Database architecture (backend)",
-            "Management interface (admin dashboard)",
+            "Full Modern Site (up to 10 pages)",
+            "Premium Responsive & Animated Design",
+            "Form & Database (Backend)",
             "Facebook & Social Media Link",
             "5 Professional Email Addresses",
-            "SSL Security Certificate",
+            "SSL Security Certificate (HTTPS)",
             "Google My Business & Maps Setup",
-            "Advanced SEO Optimization",
-            "1 year hosting included",
-            "3 months maintenance included"
+            "Advanced SEO & Analytics",
+            "1 Year Hosting & 3 Months Maintenace"
           ],
           buttonText: "Develop my site"
         },
@@ -341,12 +344,15 @@ const translations = {
           title: "After-Sales Service",
           price: "300$/year",
           features: [
-            "Continuous site maintenance",
-            "Security updates",
-            "Priority technical support",
-            "Unlimited content changes",
-            "24/7 performance monitoring",
-            "Regular backups"
+            "Continuous Maintenance & Security",
+            "Priority Technical Support",
+            "Unlimited Content Changes",
+            "24/7 Performance Monitoring",
+            "Weekly Regular Backups",
+            "Plugin & Framework Updates",
+            "Monthly Performance Reports",
+            "Continuous SEO Advice",
+            "Urgent Intervention Included"
           ],
           buttonText: "Subscribe to maintenance"
         },
@@ -354,11 +360,15 @@ const translations = {
           title: "Custom",
           price: "On quote",
           features: [
-            "Complete web application",
-            "Advanced features",
-            "Premium UI/UX Design",
-            "API & Database integration",
-            "Priority support"
+            "✨ All the benefits of the Premium plan",
+            "Custom Complex Web Application",
+            "Premium UI/UX Design & UX Research",
+            "API & External Systems Integration",
+            "7/7 Priority Support",
+            "Multi-language options (FR/EN/ES)",
+            "E-commerce & Secure Payments",
+            "Site Administration Training",
+            "Digital Strategy Support"
           ],
           buttonText: "Contact us"
         }
