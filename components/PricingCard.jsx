@@ -64,21 +64,16 @@ const PricingCard = ({ id, title, price, features, buttonText, index }) => {
           )}
         </div>
 
-        <div className="group/list relative">
-          <ul className="flex flex-col gap-4 mb-8 max-h-[320px] overflow-y-auto pr-2 custom-scrollbar scroll-smooth">
-            {features.map((feature, idx) => (
-              <li key={idx} className="flex items-start gap-3 min-h-[40px]">
-                <div className="w-[8px] h-[8px] rounded-full bg-accent-blue dark:bg-dark-accent mt-2 flex-shrink-0" />
-                <span className="font-normal text-[15px] leading-tight text-secondary-text dark:text-secondary-white">
-                  {feature}
-                </span>
-              </li>
-            ))}
-          </ul>
-          {features.length > 6 && (
-            <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white/80 dark:from-primary-black/80 to-transparent pointer-events-none group-hover/list:opacity-0 transition-opacity duration-300" />
-          )}
-        </div>
+        <ul className="flex flex-col gap-4 mb-8">
+          {features.map((feature, idx) => (
+            <li key={idx} className="flex items-start gap-3 min-h-[40px]">
+              <div className="w-[8px] h-[8px] rounded-full bg-accent-blue dark:bg-dark-accent mt-2 flex-shrink-0" />
+              <span className="font-normal text-[15px] leading-tight text-secondary-text dark:text-secondary-white">
+                {feature}
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <a

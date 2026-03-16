@@ -112,7 +112,7 @@ const translations = {
           title: "Sur Mesure",
           price: "Sur devis",
           features: [
-            "✨ Tous les avantages du forfait Premium",
+            "Tous les avantages du forfait Premium",
             "Application Web complexe sur mesure",
             "Design UI/UX Premium & UX Research",
             "Intégration API & Systèmes externes",
@@ -360,7 +360,7 @@ const translations = {
           title: "Custom",
           price: "On quote",
           features: [
-            "✨ All the benefits of the Premium plan",
+            "All the benefits of the Premium plan",
             "Custom Complex Web Application",
             "Premium UI/UX Design & UX Research",
             "API & External Systems Integration",
