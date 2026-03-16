@@ -8,7 +8,7 @@ const MyApp = ({ Component, pageProps }) => (
   <LanguageProvider>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/maltos_logo_transparent.png" />
       <link rel="preconnect" href="https://stijndv.com" />
     </Head>
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
