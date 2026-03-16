@@ -66,12 +66,12 @@ const PricingCard = ({ id, title, price, features, buttonText, index }) => {
 
         <ul className="flex flex-col gap-4 mb-8">
           {features.map((feature, idx) => (
-            <li key={idx} className="flex items-start gap-3 min-h-[40px]">
-              <div className="w-[8px] h-[8px] rounded-full bg-accent-blue dark:bg-dark-accent mt-2 flex-shrink-0" />
-              <span className="font-normal text-[15px] leading-tight text-secondary-text dark:text-secondary-white">
-                {feature}
-              </span>
-            </li>
+              <li key={idx} className="flex items-start gap-3 min-h-[44px]">
+                <div className="w-[8px] h-[8px] rounded-full bg-accent-blue dark:bg-dark-accent mt-2 flex-shrink-0" />
+                <span className="font-normal text-[17px] leading-tight text-secondary-text dark:text-secondary-white">
+                  {feature}
+                </span>
+              </li>
           ))}
         </ul>
       </div>

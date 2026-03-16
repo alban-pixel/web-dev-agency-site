@@ -68,7 +68,7 @@ const translations = {
             "Design Responsive (Multi-écrans)",
             "Formulaire de contact intelligent",
             "Liaison Page Facebook & Réseaux sociaux",
-            "1 Adresse courriel pro (ex: info@)",
+            "1 Adresse courriel pro",
             "Certificat de sécurité SSL (HTTPS)",
             "Optimisation SEO de base & Indexation",
             "Hébergement 1 an & Support Maltos",
@@ -118,9 +118,7 @@ const translations = {
             "Intégration API & Systèmes externes",
             "Support prioritaire 7j/7",
             "Options multi-langues (FR/EN/ES)",
-            "E-commerce & Paiements sécurisés",
-            "Formation à l'administration du site",
-            "Accompagnement stratégie digitale"
+            "Accompagnement stratégie globale"
           ],
           buttonText: "Contactez-nous"
         }
@@ -316,7 +314,7 @@ const translations = {
             "Responsive Design (Multi-screen)",
             "Smart Contact Form",
             "Facebook & Social Media Link",
-            "1 Professional Email Address (info@)",
+            "1 Professional Email Address",
             "SSL Security Certificate (HTTPS)",
             "Basic SEO & Google Indexing",
             "1 Year Hosting & Maltos Support",
@@ -360,15 +358,13 @@ const translations = {
           title: "Custom",
           price: "On quote",
           features: [
-            "All the benefits of the Premium plan",
+            " All the benefits of the Premium plan",
             "Custom Complex Web Application",
             "Premium UI/UX Design & UX Research",
             "API & External Systems Integration",
             "7/7 Priority Support",
             "Multi-language options (FR/EN/ES)",
-            "E-commerce & Secure Payments",
-            "Site Administration Training",
-            "Digital Strategy Support"
+            "Global digital strategy support"
           ],
           buttonText: "Contact us"
         }
