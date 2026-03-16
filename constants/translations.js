@@ -71,8 +71,7 @@ const translations = {
             "1 Adresse courriel pro",
             "Certificat de sécurité SSL (HTTPS)",
             "Optimisation SEO de base & Indexation",
-            "Hébergement 1 an & Support Maltos",
-            "Optimisation de vitesse standard"
+            "Hébergement 1 an",
           ],
           buttonText: "Commencer"
         },
@@ -317,8 +316,7 @@ const translations = {
             "1 Professional Email Address",
             "SSL Security Certificate (HTTPS)",
             "Basic SEO & Google Indexing",
-            "1 Year Hosting & Maltos Support",
-            "Standard Speed Optimization"
+            "1 Year Hosting"
           ],
           buttonText: "Start"
         },
