@@ -37,7 +37,7 @@ const PricingCard = ({ id, title, price, features, buttonText, index }) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ transform, transition: transform ? "transform 0.1s ease-out" : "transform 0.5s ease-out" }}
-      className="pricing-card-3d flex-1 flex flex-col justify-between p-6 sm:p-8 rounded-[32px] border-[1px] border-[#d1d5db] dark:border-[#6a6a6a] bg-white/50 dark:bg-white/5 relative z-10 overflow-hidden min-w-[300px] sm:min-w-[500px]"
+      className="pricing-card-3d flex-1 flex flex-col justify-between p-6 sm:p-8 rounded-[32px] border-[1px] border-[#d1d5db] dark:border-[#6a6a6a] bg-white/50 dark:bg-white/5 relative z-10 overflow-hidden min-w-[300px] sm:min-w-[400px]"
     >
       {/* Glow follow cursor */}
       <div
@@ -66,12 +66,12 @@ const PricingCard = ({ id, title, price, features, buttonText, index }) => {
 
         <ul className="flex flex-col gap-4 mb-8">
           {features.map((feature, idx) => (
-              <li key={idx} className="flex items-start gap-3 min-h-[44px]">
-                <div className="w-[8px] h-[8px] rounded-full bg-accent-blue dark:bg-dark-accent mt-2 flex-shrink-0" />
-                <span className="font-normal text-[17px] leading-tight text-secondary-text dark:text-secondary-white">
-                  {feature}
-                </span>
-              </li>
+            <li key={idx} className="flex items-start gap-3 min-h-[44px]">
+              <div className="w-[8px] h-[8px] rounded-full bg-accent-blue dark:bg-dark-accent mt-2 flex-shrink-0" />
+              <span className="font-normal text-[17px] leading-tight text-secondary-text dark:text-secondary-white">
+                {feature}
+              </span>
+            </li>
           ))}
         </ul>
       </div>
